@@ -1,5 +1,11 @@
 """报告生成与下载。"""
+import sys
+from pathlib import Path
 
+CURRENT_FILE = Path(__file__).resolve()
+PROJECT_ROOT = CURRENT_FILE.parent.parent if CURRENT_FILE.parent.name == "pages" else CURRENT_FILE.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 import streamlit as st
 
 from utils.data_store import (
