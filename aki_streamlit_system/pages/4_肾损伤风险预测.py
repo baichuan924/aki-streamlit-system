@@ -1,5 +1,11 @@
 """肾损伤风险预测与结果展示。"""
+import sys
+from pathlib import Path
 
+CURRENT_FILE = Path(__file__).resolve()
+PROJECT_ROOT = CURRENT_FILE.parent.parent if CURRENT_FILE.parent.name == "pages" else CURRENT_FILE.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 import plotly.graph_objects as go
 import streamlit as st
 
