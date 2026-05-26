@@ -1,0 +1,1 @@
+record_id,created_at,patient_json,labs_json,medication_json,risk_score,risk_level,prediction_json

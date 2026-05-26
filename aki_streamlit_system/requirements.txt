@@ -1,0 +1,5 @@
+# Streamlit Community Cloud 部署依赖（仅项目直接使用的包）
+streamlit>=1.28.0,<2
+pandas>=2.0.0
+plotly>=5.18.0
+openpyxl>=3.1.0
